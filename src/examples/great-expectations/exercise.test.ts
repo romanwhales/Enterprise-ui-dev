@@ -68,8 +68,7 @@ describe('Kanban Board', () => {
 
     // Verify that the status is no longer in in board.statuses.
     const returnValue = board.removeStatus(status)
-    // expect(board.statuses).not.toContain(status)
-    expect(returnValue).rejects.toBe(4)
+    expect(board.statuses).not.toContain(status)
   });
 });
 
