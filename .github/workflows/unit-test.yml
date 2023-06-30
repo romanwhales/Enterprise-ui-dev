@@ -19,8 +19,8 @@ jobs:
         with: 
           path: ~/.npm 
           key: npm-${{ hashFiles('**/package-lock.json') }} 
-          - run: npm ci
-          - run: npm test
+      - run: npm ci
+      - run: npm test
   build:
     runs-on: ubuntu-latest
 
