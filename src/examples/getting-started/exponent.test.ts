@@ -1,6 +1,8 @@
-import { describe, expect, it } from 'vitest';
+
 import { exponent, square, cube } from './exponent';
 import { multiply } from './math';
+
+
 
 describe('exponent', () => {
   it('should correctly calcuate the exponent of a number', () => {

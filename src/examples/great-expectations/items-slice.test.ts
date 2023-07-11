@@ -13,7 +13,6 @@ it('returns an empty array as the initial state', () => {
 it('supports adding an item with the correct name', () => {
   expect.hasAssertions();
   const result = reducer([], add({ name: 'iPhone' }));
-  console.log("Result is ",result)
   expect(result).toEqual([expect.objectContaining({name: "iPhone"})])
 });
 
