@@ -42,8 +42,8 @@ jobs:
           node-version: 18
           cache: "npm"
       - run: npm test -- --coverage
-      - uses: actions/upload-artifact@v3
-        name: Archive coverage report
-        with:
-          name: covergae-report
-          path: coverage
+      # - uses: actions/upload-artifact@v3
+      #   name: Archive coverage report
+      #   with:
+      #     name: covergae-report
+      #     path: coverage
